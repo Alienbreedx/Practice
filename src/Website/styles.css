@@ -1,0 +1,67 @@
+html {
+  background-color: rgb(29, 34, 34);
+  min-height: 800px;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+}
+
+h1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: black;
+}
+
+h2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+}
+
+nav {
+  background-color: slategray;
+  overflow: hidden;
+  text-align: center;
+}
+
+nav a {
+  display: flexbox;
+  color: white;
+  text-align: center;
+  padding: 20px 20px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+nav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.image-container {
+  width: 34%;
+  margin-bottom: 150px;
+}
+
+.image-container img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Contact us below*/
+
+h3 {
+  display: block;
+  align-items: left;
+  color: white;
+}

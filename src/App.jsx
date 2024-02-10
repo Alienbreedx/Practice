@@ -1,14 +1,12 @@
-import { useState } from 'react';
-import './App.css';
+import Buttons from './Buttons.jsx';
+import './app.css';
+import Jake from './jake.jsx';
 
-function App() {
-  const [total, setCount] = useState(0);
-  function onclickhandler() {
-    var copy = total;
-    copy++;
-    setCount(copy);
-  }
-  return <button onClick={onclickhandler}>count is {total}</button>;
+export default function App() {
+  return (
+    <div>
+      <Jake></Jake>
+      <Buttons />
+    </div>
+  );
 }
-
-export default App;
