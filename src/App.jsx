@@ -1,25 +1,22 @@
 import Home from './Home.jsx';
-import axios from 'axios';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Navbar from './Navbar.jsx';
+import UserInfoForm from './Contact.jsx';
 import './App.css';
 
-export default function App() {
-  function onclickhandler() {
-    const options = {
-      method: 'post',
-      url: 'https://script.google.com/macros/s/AKfycbxUxfZqGQltIhgq-VPJ7RFRA_LB_k3uISn8ktA8LohqIKJghgtZavJKhFBZPKqwU5zjcA/exec',
-      params: {
-        test: 'test',
-        email: 'alopezisaac@gmail.com',
-        phone: 3853356703,
-      },
-    };
-    axios(options);
-  }
-
+function App() {
   return (
-    <div>
-      <Home />
-      <button onClick={onclickhandler}>Press me!</button>
-    </div>
+    <Router>
+      <div>
+        <Navbar />
+        <Routes>
+          <Route path='/' element={<Home />} />
+          <Route path='/contact' element={<UserInfoForm />} />
+          {/* Add more routes here*/}
+        </Routes>
+      </div>
+    </Router>
   );
 }
+
+export default App;
