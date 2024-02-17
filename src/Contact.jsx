@@ -15,7 +15,7 @@ function UserInfoForm() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     const url =
-      'https://script.google.com/macros/s/AKfycbxUxfZqGQltIhgq-VPJ7RFRA_LB_k3uISn8ktA8LohqIKJghgtZavJKhFBZPKqwU5zjcA/exec';
+      'https://script.google.com/macros/s/AKfycbxDim9BfXElEOO7u591v27tKeE07cYjPFS_l-2wO9LATHZVi1hCA5Zi47-9hZfggYGHdw/exec';
 
     try {
       const response = await fetch(url, {
